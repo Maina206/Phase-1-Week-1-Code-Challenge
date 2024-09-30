@@ -11,6 +11,7 @@ The coding challenge is divided into three challenges:
 3. Net Salary Calculator
 
 
+## Project setup 
 ### Student Grade Generator
 The challenge involved creating a program that prompts students to input their marks, which are between 0 and 100 and then assigning them a grade depending on their marks.
 
@@ -20,14 +21,20 @@ The second challenge involved creating a program that takes as input the speed o
 
 
 ### Net Salary Calculator
-The final challenge involved creating a program that calculates an individual’s Net Salary by getting the inputs of basic salary and benefits. The program then culculates and outputs the employee's payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary (keep in mid this is calculated monthly). The programes used the latest rates from KRA
+The final challenge involved creating a program that calculates an individual’s Net Salary by getting the inputs of basic salary and benefits. The program then calculates and outputs the employee's payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary (keep in mid this is calculated monthly). The program used the latest rates from KRA.
 
 ## Installation requirements
 - Git
 - Node.js
 
 ## Live project link
+https://github.com/Maina206/Phase-1-Week-1-Code-Challenge
 
 ## Technologies used
 1. JavaScript
 2. Node.js to run the code
+
+## License
+The content of this site is licensed under the Moringa School license
+Copyright (c) 2024.
+
