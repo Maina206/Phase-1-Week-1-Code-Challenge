@@ -70,10 +70,12 @@ function getNetPay(basicSalary, benefits) {
     const calculatedPAYE = getPAYE(grossSalary, totalNSSFContr);
     console.log(`Your Total Monthly Payable PAYE is ${calculatedPAYE}`);
 
+    //Consider the Payee relief employees get
     const payeeRelief = 2400;
     const payeAfterRelief = calculatedPAYE - payeeRelief;
     console.log(`Your Total Monthly Payable PAYE After Relief is ${payeAfterRelief}`);
 
+    //get the NHIF payable depending on the salary bracket of the employee
     function getNHIFContr(grossSalary) {
         if (grossSalary >= 0 && grossSalary <= 5999) {
             return 150;
