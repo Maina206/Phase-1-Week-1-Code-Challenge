@@ -1,8 +1,12 @@
 //The program will assign each value to a variable to handle changes to the value easily incase KRA updates the values and rates. 
 
 function getNetPay(basicSalary, benefits) {
-    //calculating the grossSalary
+    //calculating the grossSalary with housing levy deducted
     const grossSalary = basicSalary + benefits;
+
+    const housingLevy = grossSalary * 0.015;
+    console.log(`Your Total Payable Housing Levy is ${housingLevy}`)
+
 
     //calculating NSSF contribution
     function calculateNSSFContribution(grossSalary) {
@@ -112,7 +116,7 @@ function getNetPay(basicSalary, benefits) {
     console.log(`Your Total Monthly NHIF Contribution is ${contrubutionNHIF}`);
 
     //calculate the net salary
-    const netSalary = grossSalary - (totalNSSFContr + payeAfterRelief + contrubutionNHIF)
+    const netSalary = grossSalary - (totalNSSFContr + payeAfterRelief + contrubutionNHIF + housingLevy)
     const annualNetSalary = netSalary *12;
     console.log(`Your Total Monthly Net Salary is ${netSalary}`);
     console.log(`Your Total Annual Net Salary is ${annualNetSalary}`);
